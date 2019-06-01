@@ -950,7 +950,7 @@ The alternatives considered are:
 
  5. Define a standardized pretty-printing format for things that end up as
     symbols, compress with `zstd` (specially trained for Rust symbols) and
-    encode the result as `base63`. This is rather simple but loses all
+    encode the result as `base64`. This is rather simple but loses all
     human-readability. It's unclear how well this would compress. It would
     pull the `zstd` specification into the mangling scheme specification,
     as well as the pre-trained dictionary.
